@@ -1,0 +1,40 @@
+<!doctype html>
+<html ng-app='github-api'>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled Document</title>
+  <link type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body ng-controller='githubController'>
+  <form>
+    <input ng-model='searchText' placeholder="Search Github User">
+    <button class="btn btn-large" ng-click='getUserData()'>Search</button>  
+  </form>
+  <div>
+    <h1>Username: {{user.name}}</h1>
+    <h2>Information</h2>
+    <table>
+    <h3><tr>
+      <td>Avatar</td>
+      <td>Email</td>
+      <td>Location</td>
+      </tr></h3>
+    <tr>
+      <td><img src="{{user.avatar_url}}"</td>
+      <td>{{user.email}}</td>
+      <td>{{user.location}}</td>
+    </tr>
+    </table>
+    
+  </div>
+
+
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="app.js"></script>
+  <script src="controller.js"></script>
+  <script src="service.js"></script>
+</body>
+
+</html>

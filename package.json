@@ -1,0 +1,23 @@
+{
+  "name": "github-api",
+  "version": "1.0.0",
+  "description": "Today we are going to create a tool that allows us to look up a github user via their username, and pull cool data from their account!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmerrill2/github-api.git"
+  },
+  "author": "Brad Merrill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bmerrill2/github-api/issues"
+  },
+  "homepage": "https://github.com/bmerrill2/github-api#readme",
+  "dependencies": {
+    "angular": "^1.4.7",
+    "bootstrap": "^3.3.5"
+  }
+}
